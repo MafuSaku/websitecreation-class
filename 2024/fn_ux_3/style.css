@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+  
+.navbar {
+    display: flex;
+  /*  border: 1px solid red; */
+    background-color: #333333;
+    color: #ffffff;
+}
+  
+.logo {
+    padding-left: 5%;
+    width: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /*  border: 1px solid red; */
+}
+  
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /*  border: 1px solid red; */
+    list-style: none;
+}
+  
+ul li {
+    margin: 0 1rem;
+}
+  
+ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+  
+header {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /*  border: 1px solid red; */
+    background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffiverr-res.cloudinary.com%2Fimages%2Fq_auto%2Cf_auto%2Fgigs%2F169030111%2Foriginal%2F6941e8700afcb68ab2010c7211f702d3ddfc0a2a%2Fteach-you-the-basics-of-roblox-lua-scripting-31ab.png&f=1&nofb=1&ipt=7d482d94db89d2ef52fd9c2bb378b87cb6682928258566c9fa551dfedf722b32&ipo=images");
+}
+  
+.header-info {
+    text-align: center;
+    width: 650px;
+    height: 250px;
+  /*  border: 1px solid red; */
+    color: #ffffff;
+}
+  
+.header-info a {
+    display: block;
+    width: 80px;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+  
+.teams {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Could also use "1fr fr fr" */
+}
+  
+.teams-items {
+  /*  border: 1px solid red; */
+    padding: 2rem;
+    background: #339CFF;
+    color: #ffffff;
+    text-align: center;
+}
+  
+.teams-items img {
+    width: 150px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px #333333;
+}
+  
+.teams-items a {
+    text-decoration: none;
+    color: #000000;
+    background: #ffffff;
+    padding: 0.5rem;
+}
+  
+footer {
+    background: #333333;
+    padding: 1rem;
+    text-align: center;
+    color: #ffffff;
+}

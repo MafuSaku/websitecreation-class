@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Product Site</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <!--
+    This example requires some changes to your config:
+
+    ```
+    // tailwind.config.js
+    module.exports = {
+      // ...
+      plugins: [
+        // ...
+        require('@tailwindcss/aspect-ratio'),
+      ],
+    }
+    ```
+  -->
+  <div class="bg-white">
+    <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+      <h2 class="text-2xl font-bold tracking-tight text-gray-900">Customers also purchased</h2>
+
+      <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+        <div class="group relative">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  Basic Tee
+                </a>
+              </h3>
+              <p class="mt-1 text-sm text-gray-500">Black</p>
+            </div>
+            <p class="text-sm font-medium text-gray-900">$35</p>
+          </div>
+        </div>
+        
+        <div class="group relative">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+               <img src="https://i.pinimg.com/736x/34/69/12/346912d87db7f565bb7f7251b07e8f9e.jpg" alt="Front of men&#039;s Basic Tee in gray." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+            </div>
+            <div class="mt-4 flex justify-between">
+              <div>
+                 <h3 class="text-sm text-gray-700">
+                   <a href="#">
+                    <span aria-hidden="true" class="absolute inset-0"></span>
+                     Gray Tee
+                   </a>
+                </h3>
+                 <p class="mt-1 text-sm text-gray-500">Gray</p>
+               </div>
+             <p class="text-sm font-medium text-gray-900">$50</p>
+            </div>
+        </div>
+
+        <div class="group relative">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+               <img src="https://i5.walmartimages.com/seo/Port-Company-Ladies-100-Cotton-Essential-T-Shirt-Purple-M_11340b55-b1a5-4bc4-8d69-eb9bdbd20a66_1.19bae4f084671e9249d6e856b2f512cf.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Front of men&#039;s Basic Tee in gray." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+            </div>
+            <div class="mt-4 flex justify-between">
+              <div>
+                 <h3 class="text-sm text-gray-700">
+                   <a href="#">
+                    <span aria-hidden="true" class="absolute inset-0"></span>
+                     Purple Tee
+                   </a>
+                </h3>
+                 <p class="mt-1 text-sm text-gray-500">Purple</p>
+               </div>
+             <p class="text-sm font-medium text-gray-900">$50</p>
+            </div>
+        </div>
+
+        <div class="group relative">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+               <img src="https://www.tistabene.com/cdn/shop/products/MSH-2248A.jpg?v=1694081269" alt="Front of men&#039;s Basic Tee in gray." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+            </div>
+            <div class="mt-4 flex justify-between">
+              <div>
+                 <h3 class="text-sm text-gray-700">
+                   <a href="#">
+                    <span aria-hidden="true" class="absolute inset-0"></span>
+                     Purple Tee
+                   </a>
+                </h3>
+                 <p class="mt-1 text-sm text-gray-500">Purple</p>
+               </div>
+             <p class="text-sm font-medium text-gray-900">$50</p>
+            </div>
+        </div>
+
+        <div class="group relative">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+               <img src="https://filohevis.com/cdn/shop/files/Red.jpg?v=1716050886&width=3200" alt="Front of men&#039;s Basic Tee in gray." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+            </div>
+            <div class="mt-4 flex justify-between">
+              <div>
+                 <h3 class="text-sm text-gray-700">
+                   <a href="#">
+                    <span aria-hidden="true" class="absolute inset-0"></span>
+                     Red Tee
+                   </a>
+                </h3>
+                 <p class="mt-1 text-sm text-gray-500">Red</p>
+               </div>
+             <p class="text-sm font-medium text-gray-900">$60</p>
+            </div>
+        </div>
+
+        <div class="group relative">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+               <img src="https://i.pinimg.com/474x/66/28/3a/66283a7aa6822d133b4bd6d23cd80a77.jpg" alt="Front of men&#039;s Basic Tee in gray." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+            </div>
+            <div class="mt-4 flex justify-between">
+              <div>
+                 <h3 class="text-sm text-gray-700">
+                   <a href="#">
+                    <span aria-hidden="true" class="absolute inset-0"></span>
+                     Pink Crop
+                   </a>
+                </h3>
+                 <p class="mt-1 text-sm text-gray-500">Pink</p>
+               </div>
+             <p class="text-sm font-medium text-gray-900">$35</p>
+            </div>
+        </div>
+
+        <div class="group relative">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+               <img src="https://www.snitch.co.in/cdn/shop/files/4MSS1947-05-M40.jpg?v=1685171876" alt="Front of men&#039;s Basic Tee in gray." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+            </div>
+            <div class="mt-4 flex justify-between">
+              <div>
+                 <h3 class="text-sm text-gray-700">
+                   <a href="#">
+                    <span aria-hidden="true" class="absolute inset-0"></span>
+                     Pink Tee
+                   </a>
+                </h3>
+                 <p class="mt-1 text-sm text-gray-500">Pink</p>
+               </div>
+             <p class="text-sm font-medium text-gray-900">$40</p>
+            </div>
+        </div>
+
+        <div class="group relative">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+               <img src="https://5.imimg.com/data5/SELLER/Default/2024/1/374813208/PV/DL/DS/158169947/9-500x500.png" alt="Front of men&#039;s Basic Tee in gray." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+            </div>
+            <div class="mt-4 flex justify-between">
+              <div>
+                 <h3 class="text-sm text-gray-700">
+                   <a href="#">
+                    <span aria-hidden="true" class="absolute inset-0"></span>
+                     Gray Tee
+                   </a>
+                </h3>
+                 <p class="mt-1 text-sm text-gray-500">Gray</p>
+               </div>
+             <p class="text-sm font-medium text-gray-900">$25</p>
+            </div>
+        </div>
+        
+        <!-- More products... -->
+      </div>
+    </div>
+  </div>
+  
+</body>
+
+</html>
