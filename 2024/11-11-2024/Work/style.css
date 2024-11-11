@@ -1,0 +1,77 @@
+body {
+    background-color: #1d1d1c;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 50px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #272727;
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        color: #ffffff;
+    }
+
+    input,
+    select {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 5px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000;
+    }
+
+    button[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #4b4b4afa;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        /* Changes the transition of the background color on how long it takes
+        to ease in and out */
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #111111;
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1d1d1c;
+    color: #ffffff;
+}

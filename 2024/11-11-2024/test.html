@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rah Rah Meow</title>
+
+    <style>
+        body {
+            background-color: papayawhip;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            text-align: center;
+            font-size: 40px;
+            color: black;
+        }
+
+        form {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            background-color: lightsalmon;
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid black;
+
+            input {
+                background-color: peachpuff;
+                border-radius: 5px;
+                border: 1px solid black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Test Forms</h2>
+    <form action="/test2.html">
+        <label for="firstName">First Name:</label> <br>
+        <input type="text" id="firstName" value="" placeholder="Jane"></label> <br>
+        <label for="lastName">Last Name:</label> <br>
+        <input type="text" id="lastName" value="" placeholder="Doe"></label> <br> <br>
+        
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label> <br> <br>
+
+        <input type="checkbox" id="terms" name="terms" value="terms">
+        <label for="terms">I agree to the terms and conditions</label> <br>
+        <input type="checkbox" id="html" name="learnField" value="learnField">
+        <label for="terms">I want to learn HTML</label> <br>
+        <input type="checkbox" id="css" name="learnField" value="learnField">
+        <label for="terms">I want to learn CSS</label> <br> <br>
+
+        <label for="age">Age:</label> <br>
+        <input type="number" id="age" value="" placeholder="18"> <br> <br>
+
+        <label for="password">Password:</label> <br>
+        <input type="password" id="password" value="" placeholder="Password"> <br>
+        <label for="confirmPassword">Confirm Password:</label> <br>
+        <input type="password" id="confirmPassword" value="" placeholder="Confirm Password"> <br> <br>
+
+        <label for="phoneNumber">Phone Number:</label> <br>
+        <input type="tel" id="phoneNumber" value="" placeholder="123-456-7890"> <br>
+
+        <label for="email">Email:</label> <br>
+        <input type="email" id="email" value="" placeholder="V9o5Q@example.com"> <br> <br>
+        
+        <input type="button" value="Button"> <br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

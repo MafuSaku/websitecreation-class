@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maow Mrp Meow x3</title>
+
+    <style>
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #f5f5f5;
+
+            label {
+                display: block;
+                margin-bottom: 8px;
+                font-family: "Poppins", sans-serif;
+                font-weight: bold;
+                font-size: 16px;
+                color: #000000;
+            }
+
+            input[type="text"],
+            input[type="password"],
+            select {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #cccccc;
+                border-radius: 5px;
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                color: #000000;
+            }
+
+            button[type="submit"] {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                background-color: #4CAF50;
+                color: #ffffff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-family: "Poppins", sans-serif;
+                font-weight: bold;
+                font-size: 16px;
+                cursor: pointer;
+                /* Changes the transition of the background color on how long it takes
+                to ease in and out */
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: #45a049;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="form-container">
+        <form action="#">
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" placeholder="Please input your username" required>
+
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" placeholder="Please input your password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </section>
+</body>
+</html>
