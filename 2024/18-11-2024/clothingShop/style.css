@@ -1,0 +1,581 @@
+body {
+    font-family: 'Alexandria', sans-serif;
+    background-color: #333333;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #b874f7;
+}
+
+/* Main styling */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fffffff3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #666666;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between the copyright text and footer navigation */
+}
+
+footer p {
+    margin: 0;
+    font-size: 18px;
+    color: #ccc; /* Lighter color for copyright text */
+}
+
+/* Footer navigation styles */
+.footer-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the links */
+}
+
+.footer-nav li {
+    margin: 0;
+}
+
+.footer-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #b874f7; /* Highlight color on hover */
+}
+
+/* Optional: Add a divider line above footer links for separation */
+.footer-nav {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+/* Section styles for shirt and shoe products */
+#shirt-products, #shoe-products {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.product-grid {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 20px; /* Space between product cards */
+    padding: 20px 0;
+    justify-content: flex-start; /* Align items to the left */
+}
+
+/* The link that wraps around the product card */
+.product-link {
+    display: block; /* Make the anchor tag take the full width of the product card */
+    text-decoration: none; /* Remove default underline */
+}
+
+/* Product card styles */
+.product-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 250px; /* Ensure each product card has a minimum width */
+    transition: transform 0.3s ease;
+    cursor: pointer; /* Show pointer cursor to indicate it's clickable */
+}
+
+/* Product card image styles */
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Product card text styles */
+.product-card h4 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #b874f7;
+}
+
+/* Hover effect on product cards */
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Prevent URL from appearing in the status bar on hover */
+.product-link {
+    pointer-events: all;
+    cursor: pointer;
+}
+
+/* Additional anchor and hover styles */
+a {
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #b874f7;
+}
+
+/* Contact Form Styles */
+#contact-form h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#contact-form p {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+    align-self: flex-start; /* Align labels to the left */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 500px; /* Limit input width */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #b874f7;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form .btn-submit {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background-color: #b874f7;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .btn-submit:hover {
+    background-color: #8a56f7;
+}
+
+.contact-form .btn-submit:active {
+    transform: scale(0.98);
+}
+
+/* Responsive Design for Contact Form */
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+    #contact-form {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%; /* Full width on mobile */
+    }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    #contact-form {
+        padding: 25px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        max-width: 90%; /* Make inputs and textarea more fluid on tablet */
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    #contact-form {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* About Us Page Styles */
+#about-us h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#about-us p {
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#about-us h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+#about-us .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 300px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.team-member h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    margin: 10px 0;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #666666;
+}
+
+/* Responsive Design for About Us Section */
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+    #about-us {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    #about-us {
+        padding: 25px;
+    }
+
+    .team-members {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .team-member {
+        width: 45%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    #about-us {
+        max-width: 1000px;
+    }
+}
+
+/* Product Detail Page Styles */
+#product-detail {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+}
+
+.product-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-info {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-info h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.product-info p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.size-options,
+.quantity {
+    margin-bottom: 20px;
+}
+
+.size-options label,
+.quantity label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+select,
+input[type="number"] {
+    font-size: 16px;
+    padding: 8px;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.add-to-cart {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #b874f7;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #9b5adf;
+}
+
+/* Responsive Design for Product Detail Page */
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .product-info {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* Tablets and larger devices */
+@media (max-width: 1024px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .size-options,
+    .quantity {
+        width: 80%;
+    }
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-image img {
+        width: 100%;
+        max-width: 350px;
+    }
+}
