@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wah Wah Wah</title>
+
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=almarai:300,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Wah Wah Wah</h1>
+    </header>
+
+    <main>
+        <section id="form">
+
+            <form method="get" oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+                <label for "shop">Choose:</label>
+
+                <select name="shop" id="shop" class="shop-select" required>
+                    <option value="banana">Banana</option>
+                    <option value="orange">Orange</option>
+                    <option value="apple">Apple</option>
+                    <option value="lemon">Lemon</option>
+                </select>
+
+                <br>
+
+                <button type="submit" value="Submit" class="submit-button">Submit</button>
+
+                <br> <hr>
+
+                <h2>Button Alerts</h2>
+                <button type="button" onclick="alert('ไอแมนเป็นเกย์')">Button!</button>
+                
+                <br> <hr>
+
+                <h2>Output Element</h2>
+                0 <input type="range" id="a" name="a" value="50">
+                100 + <input type="number" id="b" name="b" value="0">
+                = <output name="x" for="a b"></output>
+
+                <br>
+
+                <input type="submit" class="submit-button">
+
+            </form>
+        
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
