@@ -1,0 +1,86 @@
+body {
+    font-family: 'ABeeZee', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 197, 137);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 30vh; /* 100 */
+}
+
+#moodeng-form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255, 165, 30);
+}
+
+form {
+    input[type="radio"] {
+        margin: 0;
+        padding: 0;
+        width: 60px;
+        height: 20px;
+    }
+
+    input[type="radio"]:checked {
+        color: rgb(250, 163, 56);
+    }
+    
+    label[for="Coding"] {
+        text-align: center;
+    }
+
+    label[for="UIUXDesign"] {
+        text-align: center;
+    }
+
+    label[for="History"] {
+        text-align: center;
+    }
+
+    button {
+        border-radius: 8px;
+        border: 0;
+        background-color: antiquewhite;
+        padding: 10px
+    }
+
+    button:hover {
+        background-color: blanchedalmond;
+    }
+
+    .information {
+        background-color: rgb(255, 231, 200);
+        border-radius: 8px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    .favoriteSubject {
+        background-color: rgb(255, 231, 200);
+        border-radius: 8px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+
+        p {
+            font-size: 25px;
+        }
+    }
+}
+
+label, input, button, select {
+    font-size: 20px;
+    display: block;
+    width: 95%;
+    margin-bottom: 10px;
+}

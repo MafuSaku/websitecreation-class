@@ -1,0 +1,174 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'ABeeZee', sans-serif;
+    background: linear-gradient(135deg, #f4a261, #2a9d8f); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff; /* Default text color for body */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+/* Container for the form */
+#cat-form {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 40px;
+    border-radius: 15px; /* Rounded corners for the form */
+    width: 100%;
+    max-width: 500px; /* Maximum width to keep form from stretching too wide */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+    overflow-y: auto; /* Allow scrolling if content exceeds form height */
+    max-height: 90vh; /* Prevent form from becoming too tall */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Image container */
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#topImage {
+    width: 120px; /* Fixed width for the image */
+    height: 120px; /* Fixed height to keep it circular */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensures the image fits within the circle */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #264653; /* Dark color for the header */
+}
+
+/* Form styling for inputs, labels, and buttons */
+label, input, select, button {
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Label color fix for readability */
+label {
+    font-weight: 600;
+    color: #264653; /* Dark color for labels for visibility */
+}
+
+/* Input and Select box styling */
+input, select {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #2a9d8f;
+    box-shadow: 0 0 5px rgba(42, 157, 143, 0.5);
+}
+
+/* Radio buttons */
+.favoriteSubject input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #2a9d8f; /* Color for the radio button */
+}
+
+/* Radio group styling */
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* Adjusting radio label visibility */
+.favoriteSubject label {
+    font-size: 16px;
+    color: #264653;
+    font-weight: 500;
+}
+
+/* Button styling */
+button {
+    background-color: #264653;
+    color: white;
+    border-radius: 8px;
+    padding: 14px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2a9d8f; /* Hover color */
+}
+
+/* Section for user information */
+.information {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section for favorite subjects */
+.favoriteSubject {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section title styles */
+.favoriteSubject p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #264653;
+    margin-bottom: 10px;
+}
+
+/* Responsive design: Form should be more flexible on smaller screens */
+@media (max-width: 600px) {
+    #moodeng-form {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    label, input, select, button {
+        font-size: 14px;
+    }
+    .radio-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
