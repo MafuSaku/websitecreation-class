@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meow</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>โปรแกรมตัดเกรด</h1>
+         
+        <p class="text_1">กรอกคะแนน</p>
+        
+        <div class="text_2">
+            <label for="score1">วิชาเทคโนโลยีคอมพิวเตอร์</label>
+            <input type="text" id="score1" name="score1" placeholder="0-100" required>
+            <br>
+        </div>
+
+        <div class="text_3">
+            <label for="score2">วิชาวงจรไฟฟ้า</label>
+            <input type="text" id="score2" name="score2" placeholder="0-100" required>
+            <br>
+        </div>
+
+        <div class="text_4">
+            <label for="score3">วิชาไมโครคอนโทรเลอร์</label>
+            <input type="text" id="score3" name="score3" placeholder="0-100" required>
+            <br>
+        </div>
+        
+        <br>
+
+        <button class="button" style="vertical-align: middle;" type="submit" onclick="grade(), grade2(), grade3(), onSubmit()"><span>Submit</span></button>
+
+        <h1>ผลคะแนน</h1>
+        
+        <div class="box1">
+            <h3>วิชาเทคโนโลยีคอมพิวเตอร์</h3>
+            <p class="text_11" id="show"></p>
+            <br>
+        </div>
+
+        <div class="box2">
+            <h3>วิชาวงจรไฟฟ้า</h3>
+            <p class="text_11" id="show2"></p>
+            <br>
+        </div>
+
+        <div class="box_3">
+            <h3>วิชาไมโครคอนโทรเลอร์</h3>
+            <p class="text_11" id="show3"></p>
+            <br>
+        </div>
+
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
