@@ -1,0 +1,97 @@
+/* General styles for centering text */
+* {
+    text-align: center;
+}
+
+/* Top bar header styling */
+header.topbar {
+    font-size: 1.25rem; /* 20px */
+    padding: 1.25rem; /* 20px */
+    border: 4px solid;
+    border-radius: 0.625rem; /* 10px */
+    background-color: lightgray;
+    box-shadow: 0.625rem 0.625rem; /* 10px */
+    max-width: 300px;
+    margin: 1.25rem auto; /* 20px */
+}
+
+/* Section styling for conversion inputs */
+section {
+    margin: 1.25rem auto; /* 20px */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the content */
+}
+
+/* Container styling for each conversion section */
+.container {
+    font-size: 1.25rem; /* 20px */
+    padding: 1rem; /* Increased padding for more space */
+    border: 4px solid;
+    border-radius: 0.625rem; /* 10px */
+    background-color: lightgray;
+    max-width: 300px; /* Set a max width to prevent stretching */
+    width: 100%; /* Allow it to take full width up to max-width */
+    margin: 0 1rem; /* Add horizontal margin for spacing */
+    box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.2); /* Added box shadow */
+}
+
+/* Heading styling for each conversion section */
+h2 {
+    font-size: 1.5rem; /* 24px */
+    margin-bottom: 0.625rem; /* 10px */
+}
+
+/* Input field styling */
+input[type="text"] {
+    font-size: 1.125rem; /* 18px */
+    padding: 0.625rem; /* 10px */
+    border: 2px solid;
+    border-radius: 0.3125rem; /* 5px */
+    width: 9.375rem; /* 150px */
+    box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* 2px 2px 5px */
+}
+
+/* Button styling */
+input[type="button"] {
+    display: inline-block;
+    border-radius: 0.625rem; /* Rounded corners */
+    background-color: #FFA500;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 1.25rem; /* Reduced size from 1.75rem to 1.25rem */
+    padding: 0.625rem; /* Reduced padding */
+    width: 9.375rem; /* 150px */
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 0.625rem; /* 10px */
+}
+
+input[type="button"]:hover {
+    background-color: #d3d3d3; /* Slightly darker gray on hover */
+}
+
+/* Result text styling */
+span {
+    font-size: 1.25rem; /* 20px */
+    padding: 0.625rem; /* 10px */
+    margin-left: 0.625rem; /* 10px */
+    display: inline-block; /* Ensure it behaves like a block for spacing */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 37.5rem) { /* 600px */
+    header.topbar {
+        font-size: 1.5rem; /* 24px */
+    }
+
+    input[type="text"], input[type="button"] {
+        width: 100%; /* Full width on small screens */
+        margin: 0.3125rem 0; /* 5px */
+    }
+
+    .container {
+        width: 100%; /* Full width on small screens */
+        margin: 0; /* Remove horizontal margin */
+    }
+}

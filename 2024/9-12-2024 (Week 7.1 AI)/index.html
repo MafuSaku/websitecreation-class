@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion Program - saku</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header class="topbar">
+            <h1>โปรแกรมแปลงค่า</h1>
+        </header>
+
+        <section class="celsius">
+            <div class="container">
+                <h2>องศาเซลเซียส</h2>
+                <input type="text" id="celsiusInput" placeholder="Enter °C">
+                <input type="button" value="แปลงค่า" onclick="convertCelsius()">
+                <span id="celsiusResult"></span>
+            </div>
+        </section>
+        
+        <section class="meters">
+            <div class="container">
+                <h2>เมตร</h2>
+                <input type="text" id="meterInput" placeholder="Enter meters">
+                <input type="button" value="แปลงค่า" onclick="convertMeters()">
+                <span id="meterResult"></span>
+            </div>
+        </section>
+
+        <section class="kilograms">
+            <div class="container">
+                <h2>กิโลกรัม</h2>
+                <input type="text" id="kilogramInput" placeholder="Enter kg">
+                <input type="button" value="แปลงค่า" onclick="convertKilograms()">
+                <span id="kilogramResult"></span>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
