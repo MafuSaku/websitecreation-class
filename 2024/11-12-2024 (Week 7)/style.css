@@ -1,0 +1,93 @@
+h1 {
+    text-align: center;
+}
+
+.bbox {
+    /* margin-left: 680px; */
+    margin-left: 875px;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+.head1, .head2 {
+    /* margin-left: 450px; */
+    margin-left: 625px;
+}
+
+h1, h3 {
+    text-decoration: underline;
+}
+
+.box1, .box2 {
+    margin: 20px;
+    padding: 20px;
+    padding-left: 50px;
+    background-color: #ffffff;
+    border: 5px solid;
+    box-shadow: 10px 10px 5px lightblue;
+    width: 200px;
+    display: inline-block;
+}
+
+.box3, .box4 {
+    margin: 20px;
+    padding: 20px;
+    padding-left: 50px;
+    background-color: #ffffff;
+    border: 5px solid;
+    box-shadow: 10px 10px 5px lightblue;
+    width: 200px;
+    display: inline-block;
+}
+
+.buttonx {
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.buttonx2 {
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.buttonx:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0, 24), 0 17px 50px 0 rgba(0, 0, 0, 0, 19);
+}
+
+.buttonx2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0, 24), 0 17px 50px 0 rgba(0, 0, 0, 0, 19);
+}
+
+.score {
+    display: inline;
+}
+
+.bs {
+    margin-left: 10px;
+}
+
+.textshowxbar {
+    margin-left: 640px;
+}

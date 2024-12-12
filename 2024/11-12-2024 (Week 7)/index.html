@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Sigma - saku</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>โปรแกรมหาค่าเฉลี่ยเกรด</h1>
+
+    <div class="bbox">
+        <button class="buttonx" id="bst" onclick="start_1()">กรอกคะแนน</button>
+    </div>
+    <br>
+
+    <div class="textshowxbar">
+        <h2 id="showxbar" style="display: none"></h2>
+    </div>
+
+    <section class="head1">
+        <div class="box1">
+            <h3 id="cir">วิชาวงจรไฟฟ้าและการวัด</h3>
+            <p class="score" id="show_score_cir"></p>
+            <p class="score1" id="show_score_cir1"></p>
+        </div>
+
+        <div class="box2">
+            <h3 id="tec">วิชาเทคโนโลยีคอมพิวเตอร์</h3>
+            <p class="score" id="show_score_tec"></p>
+            <p class="score1" id="show_score_tec1"></p>
+        </div>
+    </section>
+
+    <section class="head2">
+        <div class="box3">
+            <h3 id="pp">วิชาวงจรพัลส์และดิจิทัล</h3>
+            <p class="score" id="show_score_pp"></p>
+            <p class="score1" id="show_score_pp1"></p>
+        </div>
+
+        <div class="box4">
+            <h3 id="edu">วิชาเทคนิคการสอนและการจัดการเรียนรู้</h3>
+            <p class="score" id="show_score_edu"></p>
+            <p class="score1" id="show_score_edu1"></p>
+        </div>
+    </section>
+
+    <div class="bbox">
+        <button class="buttonx2" id="bst1" style="display: none;" onclick="start_1()">
+            กรอกคะแนนอีกครั้ง
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
