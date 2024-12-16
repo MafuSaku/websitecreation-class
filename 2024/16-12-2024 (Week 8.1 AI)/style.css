@@ -1,0 +1,105 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+header, footer {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ff6347;
+    margin-bottom: 1.5rem;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Main content */
+main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.quote-section, .meme-section {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quote p, .meme p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Buttons */
+.button {
+    background-color: #ff6347;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 1rem;
+}
+
+.button:hover {
+    background-color: #e53e29;
+}
+
+/* Meme Image Styles */
+.meme-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .button {
+        font-size: 0.9rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}
